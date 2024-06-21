@@ -1,0 +1,59 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light grey background */
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    margin-right: 35%;
+}
+
+/* Container styles */
+.container {
+    max-width: 600px;
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Chat icon styles */
+.chat-icon {
+    background-color: #3498db; /* Blue color */
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Chat container styles */
+.chat-container {
+    padding: 20px;
+}
+
+/* Chat header styles */
+.chat-header {
+    text-align: center;
+    color: #333; /* Dark grey text color */
+}
+
+.chat-header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.chat-header p {
+    font-size: 16px;
+    color: #666; /* Medium grey text color */
+}

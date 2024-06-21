@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hajera - The Chat Bot</title>
+    <link rel="stylesheet" href="1.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="chat-icon">
+            <!-- Icon or image for your chatbot -->
+            <img src="1.png" alt="Chat Icon">
+        </div>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>Welcome to Hajera - The Chat Bot</h1>
+                <p>Ask away!</p>
+            </div>
+            <!-- Botpress Web Chat Container -->
+            <div id="webchat"></div>
+        </div>
+    </div>
+
+    <!-- Include Botpress Embedding SDK -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/2b66ea7a-28a7-43de-b565-be83e73599ce/webchat/config.js" defer></script>
+
+    <!-- Initialize Botpress Web Chat -->
+    <script>
+        BotpressWebChat.init({
+            host: 'https://mediafiles.botpress.cloud/2b66ea7a-28a7-43de-b565-be83e73599ce/webchat/bot.html',
+            botId: 'hajera-thechatbot',
+            channelId: 'web',
+            enableReset: true // Optional: Enable reset button
+        });
+    </script>
+</body>
+</html>
